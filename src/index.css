@@ -1,13 +1,190 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", sans-serif;
+}
+
+main {
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+nav {
+  width: 100vw;
+  height: 7rem;
+  background-color: rgb(204, 118, 118);
+}
+
+.nav-container {
+  font-size: 4rem;
+  padding-top: 1.5rem;
+  margin-left: 80%;
+  position: relative;
+}
+
+.amount-container {
+  background-color: rgba(171, 8, 8, 0.921);
+  color: antiquewhite;
+  top: 1.2rem;
+  left: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 15%;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.item-container {
+  display: flex;
+}
+
+.item-features {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.remove-btn {
+  cursor: pointer;
+  font-weight: 500;
+  color: antiquewhite;
+  background-color: rgba(171, 8, 8, 0.921);
+  border: 1px solid rgba(171, 8, 8, 0.921);
+  padding: 4px;
+  border-radius: 1rem;
+  letter-spacing: 2px;
+}
+
+.item-img {
+  height: 12rem;
+  border-radius: 2rem;
+  margin-right: 3rem;
+}
+
+.item-price {
+  color: rgb(224, 129, 129);
+}
+
+.item-control {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.item-control button {
+  cursor: pointer;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: rgb(224, 129, 129);
+  border: none;
+}
+
+.item-control button:active {
+  scale: 1.2;
+}
+
+.item-amount {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.total-container {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  margin-left: 20%;
+  width: 55%;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+hr {
+  margin-left: 15%;
+  width: 60%;
+  background-color: rgba(210, 56, 53, 0.415);
+}
+
+.clear-btn {
+  cursor: pointer;
+  background-color: antiquewhite;
+  color: rgb(204, 65, 65);
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 3px solid rgb(192, 98, 98);
+  display: block;
+  margin: 0 auto;
+  transition: all 0.4s;
+}
+
+.clear-btn:hover {
+  background-color: rgb(204, 65, 65);
+  color: antiquewhite;
+}
+
+.clear-btn:active {
+  scale: 1.02;
+}
+
+.empty-bag {
+  text-align: center;
+  font-size: 5rem;
+  color: rgb(131, 131, 131);
+}
+
+@media only screen and (max-width: 715px) {
+  .item-img {
+    height: 8rem;
+  }
+
+  article {
+    font-size: 1.5rem;
+  }
+
+  .total-container {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .clear-btn {
+    font-size: 1.6rem;
+  }
+
+  .remove-btn {
+    font-size: 1rem;
+  }
 }
