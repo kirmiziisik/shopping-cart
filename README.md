@@ -1,3 +1,3 @@
 Shopping Cart Component using useReducer Hook and ContextAPI
 
-Demo: https://kirmiziisik-react-shopping-cart.netlify.app/
+Demo: https://sezerusak-react-shopping-cart.netlify.app/
